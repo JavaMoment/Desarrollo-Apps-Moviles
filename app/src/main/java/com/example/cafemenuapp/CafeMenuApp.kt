@@ -43,21 +43,21 @@ fun eliminarProducto(productos: MutableList<Producto>) {
 }
 
 
-// Esta función es para cambiarle la ficha a algún producto que ya tengas en el menú.
+// Esta función es para cambiarle la ficha a algún producto que ya tengas en el menú
 fun actualizarProducto(productos: MutableList<Producto>) {
     if (productos.isEmpty()) {
         println("Che, no tenemos qué actualizar. Agrega algo antes de venir a tocar.")
         return  // Corta si no hay nada que actualizar.
     }
-    mostrarMenu(productos)  // Muestra lo que hay para elegir bien qué actualizar.
+    mostrarMenu(productos)  // Muestra lo que hay para elegir bien qué actualizar
     println("Decime el número del producto que vas a tunear:")
-    val indice = readLine()!!.toInt() - 1  // El usuario pone el número, restamos uno para el índice.
+    val indice = readLine()!!.toInt() - 1  // El usuario pone el número, restamos uno para el índice (CREO)
     if (indice >= 0 && indice < productos.size) {
         println("Poné el nuevo nombre del producto:")
-        val nuevoNombre = readLine()!!  // Captura el nuevo nombre que el usuario quiere poner.
+        val nuevoNombre = readLine()!!  // Captura el nuevo nombre que el usuario quiere poner
         println("Ahora decime cuánto va a costar ahora:")
-        val nuevoPrecio = readLine()!!.toDouble()  // Y el nuevo precio también.
-        productos[indice] = Producto(nuevoNombre, nuevoPrecio)  // Actualiza los datos en la lista.
+        val nuevoPrecio = readLine()!!.toDouble()  // Y el nuevo precio también
+        productos[indice] = Producto(nuevoNombre, nuevoPrecio)  // Actualiza los datos en la lista
         println("Listo, producto actualizado de taquito.")
     } else {
         println("Ese número no es válido, fijate bien y probá de nuevo.")
