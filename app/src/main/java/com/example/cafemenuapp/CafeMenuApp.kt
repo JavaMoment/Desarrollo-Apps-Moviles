@@ -9,7 +9,7 @@ fun agregarProducto(productos: MutableList<Producto>) {
     val nombre = readLine()!!  // Acá agarra el nombre que escribas
     println("Ahora tirame cuánto vale:")
     val precio = readLine()!!.toDouble()  // Acá ponés el precio, solo números, no cofundirrrrrrrr
-    productos.add(Producto(nombre, precio))  // Lo agrega a la lista de productos.
+    productos.add(Producto(nombre, precio))  // Lo agrega a la lista de productos
     println("Listo el pollo, producto en cancha.")  // Avisa que ya está todo cocinado.
 }
 
