@@ -3,7 +3,7 @@ package com.example.cafemenuapp
 // Definimos la clase Producto que contendrá los datos de los productos del menú
 data class Producto(val nombre: String, var precio: Double)
 
-// Función para meter un nuevo producto en la lista. Dale que es fácil.
+// Función para meter un nuevo producto en la lista
 fun agregarProducto(productos: MutableList<Producto>) {
     println("Metele, escribí el nombre del producto:")
     val nombre = readLine()!!  // Acá agarra el nombre que escribas
@@ -14,7 +14,7 @@ fun agregarProducto(productos: MutableList<Producto>) {
 }
 
 
-// Esta función te muestra lo que hay pa' comer y tomar en el menú. Vamo' arriba.
+// Esta función te muestra lo que hay pa comer y tomar en el menú
 fun mostrarMenu(productos: MutableList<Producto>) {
     if (productos.isEmpty()) {
         println("Che, no hay nada en el menú. Ponete las pilas y agrega algo.")
@@ -25,9 +25,7 @@ fun mostrarMenu(productos: MutableList<Producto>) {
         }
     }
 }
-
-// Función para eliminar un producto del menú
-// Esta va para sacar algo del menú, por si te equivocaste o ya no va más.
+// Esta va para sacar algo del menú, por si te equivocaste o qcyo
 fun eliminarProducto(productos: MutableList<Producto>) {
     if (productos.isEmpty()) {
         println("Che, ni un solo producto hay para sacar. Metele algo primero.")
