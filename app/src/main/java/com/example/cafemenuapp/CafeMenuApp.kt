@@ -6,9 +6,9 @@ data class Producto(val nombre: String, var precio: Double)
 // Función para meter un nuevo producto en la lista. Dale que es fácil.
 fun agregarProducto(productos: MutableList<Producto>) {
     println("Metele, escribí el nombre del producto:")
-    val nombre = readLine()!!  // Acá agarra el nombre que escribas.
+    val nombre = readLine()!!  // Acá agarra el nombre que escribas
     println("Ahora tirame cuánto vale:")
-    val precio = readLine()!!.toDouble()  // Acá ponés el precio, solo números, no me enredes.
+    val precio = readLine()!!.toDouble()  // Acá ponés el precio, solo números, no cofundirrrrrrrr
     productos.add(Producto(nombre, precio))  // Lo agrega a la lista de productos.
     println("Listo el pollo, producto en cancha.")  // Avisa que ya está todo cocinado.
 }
