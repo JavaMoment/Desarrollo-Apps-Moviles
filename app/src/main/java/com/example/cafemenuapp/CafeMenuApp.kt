@@ -28,7 +28,7 @@ fun mostrarMenu(productos: MutableList<Producto>) {
 // Esta va para sacar algo del menú, por si te equivocaste o qcyo
 fun eliminarProducto(productos: MutableList<Producto>) {
     if (productos.isEmpty()) {
-        println("Che, ni un solo producto hay para sacar. Metele algo primero.")
+        println("Che, ni un solo producto hay para sacar. Agrega algo primero.")
         return  // Corta aquí si no hay nada que eliminar.
     }
     mostrarMenu(productos)  // Primero muestra lo que hay, para saber qué número volar.
