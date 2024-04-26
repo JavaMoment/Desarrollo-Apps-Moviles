@@ -7,7 +7,7 @@ data class Producto(val nombre: String, var precio: Double)
 fun leerDouble(): Double {
     while (true) {
         try {
-            return readLine()!!.toDouble().takeIf { it >= 0 } ?: throw IllegalArgumentException("El precio no puede ser negativo.")
+            return readLine()!!.toDouble().takeIf { it > 0 } ?: throw IllegalArgumentException("El precio no puede ser menor o igual a 0.")
         } catch (e: NumberFormatException) {
             println("Eso no parece un número. Intenta de nuevo:")
         } catch (e: IllegalArgumentException) {
